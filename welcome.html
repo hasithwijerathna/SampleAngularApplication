@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{message}}
+{{student.name}}
+
+<h3>Passed List:</h3>
+<ul>
+    <div ng-repeat="student in students">
+        <li ng-show='student.pass'>
+            <a href="#/welcome/{{student.address}}">{{student.name}}</a>
+        </li>
+    </div>
+</ul>
+
+<h3>Failed List:</h3>
+<ul>
+    <div ng-repeat="student in students">
+        <li ng-hide='student.pass'>
+            <a href="#/welcome/{{student.address}}">{{student.name}}</a>
+        </li>
+    </div>
+</ul>
+
+</body>
+</html>
