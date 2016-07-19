@@ -7,19 +7,27 @@
 <body>
 
 <script src="script/lib/jquery.min.js"></script>
+<link rel="stylesheet" href="css/lib/bootstrap.min.css">
+<script src="script/lib/bootstrap.min.js"></script>
 <script src="script/lib/angular.js"></script>
 <script src="script/lib/angular-route.js"></script>
 <script src="script/app.js"></script>
 <script src="script/main-controller.js"></script>
 <script src="script/detail-controller.js"></script>
+<script src="script/tabs-controller.js"></script>
 <script src="script/weather-service.js"></script>
 
-
-<a href="#welcome">Welcome</a> |
-<a href="#about">About</a> |
-<a href="#contactUs">Contact Us</a>
-
-
+<ul class="nav nav-pills" ng-controller="tabController">
+    <li ng-class="{active: isSelectedTab(1)}">
+        <a href="#welcome" ng-click="selectTab(1)">Welcome</a>
+    </li>
+    <li ng-class="{active: isSelectedTab(2)}">
+        <a href="#about" ng-click="selectTab(2)">About</a>
+    </li>
+    <li ng-class="{active: isSelectedTab(3)}">
+        <a href="#contactUs" ng-click="selectTab(3)">Contact Us</a>
+    </li>
+</ul>
 <div ng-view></div>
 
 </body>
