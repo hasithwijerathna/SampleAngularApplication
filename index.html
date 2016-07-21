@@ -17,17 +17,8 @@
 <script src="script/tabs-controller.js"></script>
 <script src="script/weather-service.js"></script>
 
-<ul class="nav nav-pills" ng-controller="tabController">
-    <li ng-class="{active: isSelectedTab(1)}">
-        <a href="#welcome" ng-click="selectTab(1)">Welcome</a>
-    </li>
-    <li ng-class="{active: isSelectedTab(2)}">
-        <a href="#about" ng-click="selectTab(2)">About</a>
-    </li>
-    <li ng-class="{active: isSelectedTab(3)}">
-        <a href="#contactUs" ng-click="selectTab(3)">Contact Us</a>
-    </li>
-</ul>
+<!--tab panel is injected as a directive-->
+<tab-panels></tab-panels>
 <div ng-view></div>
 
 </body>
