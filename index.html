@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Sample Angular App</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/select2.min.css">
+    <!--<link rel="stylesheet" href="fonts/css.css">-->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <script src="script/lib/jquery.min.js"></script>
+    <script src="script/lib/bootstrap.min.js"></script>
+    <script src="script/lib/angular.js"></script>
+    <script src="script/lib/angular-route.js"></script>
+    <script src="script/lib/select2.min.js"></script>
+    <script src="script/app.js"></script>
+    <script src="script/main-controller.js"></script>
+    <script src="script/detail-controller.js"></script>
+    <script src="script/tabs-controller.js"></script>
+    <script src="script/weather-service.js"></script>
+    <script src="script/comment-directive.js"></script>
+    <script src="script/dynamic-dir.js"></script>
+    <script src="script/my-select2-directive.js"></script>
+    <script src="script/my-select2-controller.js"></script>
 </head>
 <body>
 
-<link rel="stylesheet" href="css/lib/bootstrap.min.css">
-<link rel="stylesheet" href="css/lib/select2.min.css">
-
-<script src="script/lib/jquery.min.js"></script>
-<script src="script/lib/bootstrap.min.js"></script>
-<script src="script/lib/angular.js"></script>
-<script src="script/lib/angular-route.js"></script>
-<script src="script/lib/select2.min.js"></script>
-<script src="script/app.js"></script>
-<script src="script/main-controller.js"></script>
-<script src="script/detail-controller.js"></script>
-<script src="script/tabs-controller.js"></script>
-<script src="script/weather-service.js"></script>
-<script src="script/comment-directive.js"></script>
-<script src="script/dynamic-dir.js"></script>
-<script src="script/my-select2-directive.js"></script>
-<script src="script/my-select2-controller.js"></script>
-
 <!--tab panel is injected as a directive-->
 <tab-panels></tab-panels>
+
+<!--content goes here-->
 <div ng-view></div>
 
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p>Hasith Blog <a href="http://continuelearn.weebly.com">http://continuelearn.weebly.com</a></p>
+</footer>
 </body>
 </html>
